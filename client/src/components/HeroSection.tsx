@@ -211,14 +211,14 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+      className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-blue-600"
     >
 
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4 max-w-3xl">
-        <h1 className="font-antonio text-5xl md:text-7xl font-bold uppercase text-white mb-6 drop-shadow-lg">
-          Convierte mensajes de WhatsApp en citas automáticamente
+        <h1 className="font-antonio text-5xl md:text-7xl font-bold uppercase text-white mb-6 drop-shadow-lg leading-tight">
+          Convierte mensajes de<br />WhatsApp en citas<br />automáticamente
         </h1>
 
         <p className="font-archivo text-lg md:text-xl text-gray-100 mb-8 drop-shadow-md">
