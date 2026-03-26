@@ -64,36 +64,11 @@ export default function Footer() {
               Contacto
             </h4>
             <a
-              href="mailto:info@automaitons.com"
+              href="mailto:automaitons@gmail.com"
               className="font-archivo text-gray-400 hover:text-blue-600 transition-colors duration-300"
             >
-              info@automaitons.com
+              automaitons@gmail.com
             </a>
-          </div>
-
-          {/* Column 4: Legal */}
-          <div>
-            <h4 className="font-antonio text-lg font-bold uppercase mb-4">
-              Legal
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="font-archivo text-gray-400 hover:text-blue-600 transition-colors duration-300"
-                >
-                  Política de privacidad
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="font-archivo text-gray-400 hover:text-blue-600 transition-colors duration-300"
-                >
-                  Términos
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
 

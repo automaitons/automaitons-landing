@@ -55,9 +55,9 @@ export default function CTASection() {
           Nos encargamos de toda la configuración. No necesitas conocimientos técnicos.
         </p>
 
-        <button className="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 hover:scale-105 shadow-lg active:scale-95 mb-6">
+        <a href="https://calendly.com/automaitons/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 hover:scale-105 shadow-lg active:scale-95 mb-6">
           Empezar ahora
-        </button>
+        </a>
 
         <p className="font-archivo text-sm text-gray-600 italic">
           Plazas limitadas para nuevos clientes

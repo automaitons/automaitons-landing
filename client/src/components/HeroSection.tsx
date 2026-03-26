@@ -213,22 +213,7 @@ export default function HeroSection() {
       ref={sectionRef}
       className="relative w-full h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Ambient Canvas - Blurred background */}
-      <canvas
-        ref={ambientCanvasRef}
-        className="absolute inset-0 w-full h-full blur-[40px] saturate-200"
-        style={{ filter: 'blur(40px) saturate(2.0)' }}
-      />
 
-      {/* Foreground Canvas - UI elements */}
-      <canvas
-        ref={foregroundCanvasRef}
-        className="absolute inset-0 w-full h-full"
-        style={{
-          maskImage: 'linear-gradient(to bottom, transparent 8%, black 20%, black 80%, transparent 92%)',
-          WebkitMaskImage: 'linear-gradient(to bottom, transparent 8%, black 20%, black 80%, transparent 92%)',
-        }}
-      />
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4 max-w-3xl">
@@ -241,12 +226,9 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 hover:scale-105 shadow-lg active:scale-95">
+          <a href="https://calendly.com/automaitons/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 hover:scale-105 shadow-lg active:scale-95">
             Conseguir más citas
-          </button>
-          <button className="px-8 py-4 border-2 border-white hover:bg-white hover:text-black text-white font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 shadow-lg active:scale-95">
-            Ver cómo funciona
-          </button>
+          </a>
         </div>
       </div>
     </section>

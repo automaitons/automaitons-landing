@@ -91,8 +91,8 @@ export default function CinematicBannerSection() {
 
       {/* Content overlay */}
       <div className="relative z-10 text-center px-4 max-w-3xl">
-        <h2 className="font-antonio text-5xl md:text-6xl font-bold uppercase text-white mb-6 drop-shadow-lg">
-          Tu negocio funciona incluso cuando tú no
+        <h2 className="font-antonio text-5xl md:text-6xl font-bold uppercase text-white mb-8 drop-shadow-lg leading-tight">
+          Tu negocio funciona<br />incluso cuando tú no
         </h2>
 
         <p className="font-archivo text-lg md:text-xl text-gray-100 drop-shadow-md">
