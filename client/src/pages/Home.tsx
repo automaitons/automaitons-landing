@@ -1,25 +1,55 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import React, { useEffect, useRef } from 'react';
+import HeroSection from '@/components/HeroSection';
+import ProblemSection from '@/components/ProblemSection';
+import SolutionSection from '@/components/SolutionSection';
+import CarouselSection from '@/components/CarouselSection';
+import HowItWorksSection from '@/components/HowItWorksSection';
+import CinematicBannerSection from '@/components/CinematicBannerSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import CTASection from '@/components/CTASection';
+import Footer from '@/components/Footer';
+import Lenis from 'lenis';
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * AUTOMAITONS Landing Page
+ * 
+ * Design Philosophy: Premium SaaS landing page with cinematic scroll animations
+ * - Clean, minimalist aesthetic with high contrast
+ * - Scroll-driven animations using GSAP ScrollTrigger
+ * - Smooth scrolling with Lenis
+ * - Focus on conversion with clear CTAs
  */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  useEffect(() => {
+    // Initialize Lenis for smooth scrolling
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    } as any);
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="w-full bg-white">
+      <HeroSection />
+      <ProblemSection />
+      <SolutionSection />
+      <CarouselSection />
+      <HowItWorksSection />
+      <CinematicBannerSection />
+      <TestimonialsSection />
+      <CTASection />
+      <Footer />
     </div>
   );
 }
