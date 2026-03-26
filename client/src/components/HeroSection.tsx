@@ -226,7 +226,7 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://calendly.com/automaitons/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 hover:scale-105 shadow-lg active:scale-95">
+          <a href="https://calendly.com/automaitons/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-black border-2 border-black text-blue-600 font-antonio font-bold text-lg uppercase rounded-lg transition-all duration-300 hover:scale-105 shadow-lg active:scale-95 hover:bg-gray-900">
             Conseguir más citas
           </a>
         </div>
