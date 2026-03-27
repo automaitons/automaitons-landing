@@ -2,10 +2,22 @@
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "regions": ["sfo1"],
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
     }
   ]
 }
